@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<script type="module">
+  import {sayHi} from './say.js';
 
-<h2>Javascript load data test</h2>
-
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
+  document.body.innerHTML = sayHi('John');
 </script>
-
-</body>
-</html> 
